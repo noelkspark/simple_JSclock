@@ -5,8 +5,7 @@ function getTime() {
   const date = new Date();
   const hours = date.getHours(),
     mins = date.getMinutes();
-
-  clockTime.innertext = `${hours < 10 ? `0${hours}` : hours} : ${
+  clockTime.innerText = `${hours < 10 ? `0${hours}` : hours} : ${
     mins < 10 ? `0${mins}` : mins
   }`;
 }
