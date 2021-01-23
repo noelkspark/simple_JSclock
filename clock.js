@@ -4,10 +4,11 @@ const clockContainer = document.querySelector(".js-clock"),
 function getTime() {
   const date = new Date();
   const hours = date.getHours(),
-    mins = date.getMinutes();
+    mins = date.getMinutes(),
+    secs = date.getSeconds();
   clockTime.innerText = `${hours < 10 ? `0${hours}` : hours} : ${
     mins < 10 ? `0${mins}` : mins
-  }`;
+  } : ${secs < 10 ? `0${secs}` : secs}`;
 }
 
 function init() {
